@@ -63,14 +63,13 @@ p {
   font-size: 1.2rem;
   font-weight: 400;
   line-height: 18px;
-  margin-top: 13px;
   display: none;
+  margin-bottom: 10px;
 }
 section {
   width: 350px;
   display: flex;
   flex-direction: column;
-  gap: 16px;
   margin-top: 43px;
 }
 .questionBox {
@@ -81,7 +80,66 @@ section {
   align-items: center;
   flex-wrap: wrap;
   border-bottom: 1px solid #e8e8ea;
+  margin-top: 16px;
 }
 .arrow {
   margin: 0px 24px 16px 0px;
+  width: 8px;
+  height: 4px;
+}
+.arrow:hover {
+  cursor: pointer;
+}
+#woman_mobile {
+  display: none;
+}
+@media (max-width: 375px) {
+  main {
+    background-image: url(images/bg-pattern-mobile.svg);
+    background-size: 240px 104px;
+    background-position: center;
+    background-position-y: 0px;
+    margin-top: 148px;
+    width: 327px;
+    height: 535px;
+    flex-direction: column;
+    align-items: center;
+  }
+  #box {
+    display: none;
+  }
+  #woman {
+    display: none;
+  }
+  #woman_mobile {
+    display: block;
+    margin-top: -108px;
+    width: 237px;
+    height: 180px;
+  }
+  .rightSection {
+    margin: 60px 0px 0px;
+    width: 279px;
+  }
+  .rightSection h1 {
+    margin-left: 106px;
+  }
+  section {
+    margin-top: 38px;
+    width: 279px;
+  }
+  .questionBox {
+    margin-top: 17px;
+    width: 279px;
+    height: 34px;
+  }
+  .questionBox h3 {
+    font-size: 1.3rem;
+  }
+  .arrow {
+    margin: 5.8px 0px 24.2px;
+  }
+  p {
+    margin: -7px 0px 15px;
+  }
 }
