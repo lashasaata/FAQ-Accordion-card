@@ -8,7 +8,7 @@ const paragraps = document.querySelectorAll("p");
 let paragrapsArray = Array.from(paragraps);
 // index is 5 at the start-end, because we dont want index and activeIndex would be same to close div;
 let index = 5;
-
+// uses index to open and cloce divs; also has open function on img and text;
 divsArray.forEach((element) => {
   element.addEventListener("click", (event) => {
     let exactElement = event.target;

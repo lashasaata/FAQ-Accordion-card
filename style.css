@@ -93,7 +93,7 @@ section {
 #woman_mobile {
   display: none;
 }
-@media (max-width: 375px) {
+@media (max-width: 768px) {
   main {
     background-image: url(images/bg-pattern-mobile.svg);
     background-size: 240px 104px;
